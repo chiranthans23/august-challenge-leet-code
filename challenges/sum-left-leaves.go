@@ -16,7 +16,7 @@ func sumOfLeftLeaves(root *TreeNode) int {
 }
 
 func isleftLeaf(root *TreeNode) bool {
-	if root != nil && root.Left != nil && root.Left.Left == nil {
+	if root != nil && root.Left != nil && root.Left.Left == nil && root.Left.Right==nil {
 		return true
 	}
 	return false
